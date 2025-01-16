@@ -63,10 +63,8 @@ a {
 
 .container { 
     max-width: 1158px;
-    padding-left:  15px;
-    padding-right: 15px;
-    margin-left:  auto;
-    margin-right:  auto;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .section-title {
@@ -138,6 +136,7 @@ address {
 header {
     background-color: var(--white);
     border-bottom: 1px solid #e7e9fc;
+    padding: 24px 0;
 }
 
 header .menu a:hover, .menu a:focus {
@@ -147,7 +146,6 @@ header .menu a:hover, .menu a:focus {
 header .container {
     display:flex;
     align-items: center;
-    padding: 24px 0;
 }
 
 header nav {
@@ -236,10 +234,6 @@ button {
 .advantages li h3 {
     padding-bottom: 8px;
 }
-
-.advantages .section-title {
-    margin-bottom: 8px;
-}
 /* #endregion */
 
 /* #region ==================== TEAM ========================= */
@@ -289,6 +283,7 @@ button {
     padding-top: 120px;
 }
 
+
 .portfolio .section-title {
     margin: 0 auto;
     margin-bottom: 72px;
@@ -309,8 +304,7 @@ button {
     border-bottom: 1px solid var(--cornflower);
     border-left: 1px solid var(--cornflower);
     border-right: 1px solid var(--cornflower);
-    padding-left: 16px;
-    padding-bottom: 32px 0;
+    padding: 32px 16px;
 }
 
 .portfolio .mini-title {
