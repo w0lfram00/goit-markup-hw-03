@@ -137,6 +137,7 @@ address {
 
 header {
     background-color: var(--white);
+    border-bottom: 1px solid #e7e9fc;
 }
 
 header .menu a:hover, .menu a:focus {
@@ -146,16 +147,17 @@ header .menu a:hover, .menu a:focus {
 header .container {
     display:flex;
     align-items: center;
-    height: 76px;
+    padding: 24px 0;
 }
+
 header nav {
     display: flex;
     margin-right: auto;
-    gap: 76px;
+    align-items: center;
 }
 
 header .logo {
-
+    margin-right: 76px;
 }
 header .menu {
     display: flex;
@@ -172,6 +174,7 @@ header .address-link ul {
 
 .hero {
     background-color: var(--navy-blue);
+    padding: 188px 0;
 }
 
 .hero .main-title {
@@ -182,8 +185,8 @@ header .address-link ul {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--white);
-    width: 496px;
-    margin: 188px auto 0 auto;
+    max-width: 496px;
+    margin: 0 auto;
 }
 
 button {
@@ -196,11 +199,11 @@ button {
     color: var(--white);
     cursor: pointer;
     border-radius: 4px;
+    border:none;
     padding: 16px 32px;
     min-width: 169px;
     height: 56px;
-    margin: 0 auto 188px auto;
-
+    margin: 0 auto;
 }
 
 .hero button:hover, .hero button:focus {
@@ -227,11 +230,15 @@ button {
 }
 
 .advantages li {
-    width: calc((100% - 3 * 24) / 4);
+    width: calc((100% - 3 * 24px) / 4);
 }
 
 .advantages li h3 {
     padding-bottom: 8px;
+}
+
+.advantages .section-title {
+    margin-bottom: 8px;
 }
 /* #endregion */
 
@@ -239,12 +246,12 @@ button {
 
 .team {
     background-color: var(--cloud);
+    padding: 120px 0;
 }
 
 .team .section-title {
-    padding-top: 120px;
-    padding-bottom: 72px;
     margin: 0 auto;
+    margin-bottom: 72px;
 }
 
 .team ul {
@@ -255,9 +262,11 @@ button {
 .team .portrait-box {
     background-color: var(--white);
     width: calc((100% - 3 * 24) / 4);
-    height: 380px;
     border-radius: 0 0 4px 4px;
-    margin-bottom: 120px;
+}
+
+.team .card-content {
+    padding: 32px 0;
 }
 
 .team .portrait-box img {
@@ -265,7 +274,8 @@ button {
 }
 
 .team .portrait-box .mini-title {
-    padding-bottom: 8px;
+    margin-bottom: 8px;
+    text-align: center;
 }
 
 .team .portrait-box .text {
@@ -280,8 +290,8 @@ button {
 }
 
 .portfolio .section-title {
-    padding-bottom: 72px;
     margin: 0 auto;
+    margin-bottom: 72px;
 }
 
 .portfolio ul {
@@ -300,33 +310,32 @@ button {
     border-left: 1px solid var(--cornflower);
     border-right: 1px solid var(--cornflower);
     padding-left: 16px;
-    padding-bottom: 32px;
+    padding-bottom: 32px 0;
 }
 
 .portfolio .mini-title {
     margin-right: auto;
     text-align: start;
-    padding-bottom: 8px;
-    padding-top: 32px;
+    margin-bottom: 8px;
 }
 /* #endregion */
 
 /* #region ==================== FOOTER ========================= */
 footer {
     background-color: var(--navy-blue);
+    padding: 100px 0;
+}
+
+footer .logo {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 footer .text {
     color: var(--cloud);
 }
 
-footer .formater {
-    padding: 100px 0;
-    width: 264px;
-    margin: 0;
-}
-
 footer .text {
-    margin-top: 16px;
+    max-width: 264px
 } 
 /* #endregion */
