@@ -235,6 +235,7 @@ button {
 }
 
 .advantages li h3 {
+    text-align: start;
     margin-bottom: 8px;
 }
 /* #endregion */
@@ -264,10 +265,6 @@ button {
 
 .team .card-content {
     padding: 32px 0;
-}
-
-.team .portrait-box img {
-    padding-bottom: 32px;
 }
 
 .team .portrait-box .mini-title {
